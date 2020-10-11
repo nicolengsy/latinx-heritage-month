@@ -1,0 +1,21 @@
+#header {
+	height: 3em;
+	text-align: center;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.075);
+	position: fixed;
+	width: 100%;
+	top: 0;
+	line-height: 3em;
+	z-index: 10001;
+}
+#header .logo {
+	color: rgba(0, 0, 0, 0.75);
+	font-family: 'Source Sans Pro', serif;
+	font-weight: bold;
+	font-size: 1.25em;
+	letter-spacing: 2px;
+	text-decoration: none;
+}
+div {
+	height: 10000px;
+}
