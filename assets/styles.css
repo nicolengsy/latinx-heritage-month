@@ -1,0 +1,87 @@
+/* Colors */
+:root {
+	--red: #f94144;
+	--orange: #f8961e;
+	--purple: #9f38a9;
+	--tangerine: #f3722c;
+	--green: #90be6d;
+	--yellow: #f9c74f;
+	--blue: #577590;
+}
+
+
+/* Fonts */
+@font-face {
+	font-family: Meno;
+	src: url(MenoRegular.ttf);
+}
+
+/* General */
+body {
+	margin: 0;
+	font-family: Meno, Arial, Helvetica, sans-serif;
+}
+section {
+	margin-bottom: 50px;
+}
+
+/* Header */
+#header {
+	height: 3em;
+	text-align: center;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	line-height: 3em;
+	z-index: 10001;
+	background-color: var(--red);
+}
+#header .logo {
+	color: var(--yellow);
+	/*color: rgba(0, 0, 0, 0.75);*/
+	font-family: 'Source Sans Pro', serif;
+	font-weight: bold;
+	font-size: 1.25em;
+	letter-spacing: 2px;
+	text-decoration: none;
+}
+#cover-art {
+	background-color: grey;
+	height: 600px;
+}
+/* Print Embedding */
+#print-embed {
+	/*border: none;*/
+	width: 50%;
+	height: 371px;
+	margin: auto;
+}
+#print {
+	text-align: center;
+}
+/* Letter From the Editors*/
+.body-text {
+	width: 40%;
+	text-align: justify;
+	position: relative;
+	left: 40%;
+}
+#editor-title {
+	position: relative;
+	left: 30%;
+	top: 10%;
+}
+
+/* Footer */
+footer {
+	background-color: var(--blue);
+	color: var(--yellow);
+	padding: 20px;
+}
+footer p {
+	width: 70%;
+	text-align: center;
+	margin: auto;
+}
