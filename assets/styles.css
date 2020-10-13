@@ -175,10 +175,42 @@ h1 {
 .story-title {
 	font-size: 1.5em;
 }
+.graphic-container {
+	text-align: right;
+}
+.graphic {
+	width: 50%;
+}
 
 /* Videos */
 #video-section {
 	padding: 10%;
+}
+.videos {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-top: 50px;
+}
+.video-cell {
+	width: 40%;
+	margin: 10px;
+	margin-bottom: 30px;
+}
+.video-gifs {
+	width: 100%;
+}
+.video-gifs:hover {
+	box-sizing: border-box;
+	border: var(--orange) 5px solid;
+}
+.artist-ig {
+	font-family: Kepler;
+	text-decoration: none;
+	color: var(--orange);
+}
+.artist-ig:hover {
+	text-decoration: underline;
 }
 
 
