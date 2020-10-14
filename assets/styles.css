@@ -16,7 +16,12 @@
 }
 @font-face {
 	font-family: Kepler;
+	src:url(KeplerStd-Regular.otf);
+}
+@font-face {
+	font-family: Kepler;
 	src: url(KeplerStd-Bold.otf);
+	font-weight: bold;
 }
 @font-face {
 	font-family: Gotham;
@@ -50,6 +55,10 @@ h1 {
 	font-weight: bold;
 	margin: 1px;
 }
+.title-img {
+	width: 380px;
+	/*min-width: 250px;*/
+}
 .subtitle {
 	font-family: Gotham, Arial, Helvetica, sans-serif;
 	font-size: 24px;
@@ -57,11 +66,11 @@ h1 {
 	margin: 1px;
 }
 .yellowlight {
-	/*background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #f9c74f 65%);*/
-	display: inline-block;
+	background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #f9c74f 65%);
+/*	display: inline-block;
 	line-height: 0em;
 	padding-bottom: 0.5em;
-	background-color: var(--yellow);
+	background-color: var(--yellow);*/
 }
 .line {
 	border-color: 1px solid gray;
@@ -92,6 +101,15 @@ h1 {
 	letter-spacing: 2px;
 	text-decoration: none;
 	text-align: center;
+}
+.logo-container {
+	width: 130px;
+	margin: auto;
+	margin-top: 2px;
+}
+.logo {
+	width: 100%;
+	margin-top: 5px;
 }
 
 /* Cover */
@@ -239,7 +257,6 @@ h1 {
 	/*width: 30vw;*/
 	/*height: 28vw;*/
 	width: 30%;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	min-width: 300px;
 	margin-bottom: 30px;
 }
@@ -248,11 +265,19 @@ h1 {
 	top: -5px;
 }
 .story-container {
-	padding: 20px 30px 20px 30px;
+	padding: 10px 30px 20px 30px;
 	color: black;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.profile-img {
+	width: 100%;
+}
+.profile-img img {
+	width: 100%;
 }
 .story-title {
 	font-size: 1.5em;
+	margin-top: 0px;
 }
 .graphic-container {
 	text-align: right;
@@ -303,11 +328,11 @@ h1 {
 .podcast-cell {
 	text-align: center;
 	/*padding: 10px;*/
-	width: 25%;
+	max-width: 30%;
 	min-width: 250px;
 	/*height: 20px;*/
 	padding: 20px;
-	margin: 10px 2px;
+	margin: 10px 7px;
 }
 .podcast-cell audio {
 	max-width: 250px;
@@ -318,14 +343,17 @@ h1 {
 
 /* Ads */
 #ads-section {
-	padding: 10%;
+	/*padding: 10%;*/
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 .ad-container {
 	/*min-width: 250px;*/
 	margin: 10px;
+	width: 20%;
 }
 .ad {
 	width: 100%;
@@ -335,11 +363,12 @@ h1 {
 footer {
 	background-color: var(--blue);
 	color: var(--cream);
-	padding: 20px;
-	font-family: Gotham;
-}
-footer p {
-	width: 70%;
+	padding: 50px 20px;
+	/*font-family: Gotham;*/
+	/*width: 70%;*/
 	text-align: center;
 	margin: auto;
+}
+.yellow-name {
+	/*color: var(--yellow);*/
 }
