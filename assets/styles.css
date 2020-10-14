@@ -114,9 +114,12 @@ h1 {
 
 /* Editor Letter */
 #editor-section {
-	padding: 50px 10% 50px 10%;
-	margin: auto;
+	/*padding: 50px 10% 50px 10%;*/
 	width: 60%;
+	min-width: 300px;
+	margin: auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
 #editor-body {
@@ -172,29 +175,51 @@ h1 {
 .side-graphic {
 	width: 40%;
 	min-width: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 .side-graphic img {
 	width: 100%;
 }
 .story-stack {
 	width: 40%;
+	min-width: 230px;
+	max-width: 500px;
 	margin-top: 40px;
+	position: relative;
 }
 .story-stack a {
 	color: black;
 	text-decoration: none;
 }
 .story-stack a:hover {
-	color: var(--tangerine);
+	color: var(--orange);
 }
 .stacked-story {
 	margin: 25px 0px;
-	min-width: 300px;
-	width: 100%;
 }
 .stacked-story:hover {
 	position: relative;
 	top: -5px;
+}
+.stacked-story .story-title {
+	color: var(--orange);
+}
+.tick-container {
+	width: 40px;
+	position: absolute;
+	top: -10px;
+	left: 100%;
+}
+.tick-container-left {
+	width: 40px;
+	position: absolute;
+	top: -30px;
+	right: 98%;
+}
+.tick {
+	width: 100%;
 }
 /* Stories 2 */
 #story-section-2 {
@@ -204,16 +229,19 @@ h1 {
  display: flex;
  justify-content: space-around;
  margin-bottom: 50px;
+ flex-wrap: wrap;
 }
 .story-link {
 	color: black;
 	text-decoration: none;
 }
 .cell {
-	width: 400px;
 	/*width: 30vw;*/
 	/*height: 28vw;*/
+	width: 30%;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	min-width: 300px;
+	margin-bottom: 30px;
 }
 .cell:hover {
 	position: relative;
@@ -269,10 +297,38 @@ h1 {
 #podcast-section {
 	display: flex;
 	justify-content: center;
+	padding: 10%;
+	flex-wrap: wrap;
 }
 .podcast-cell {
-	padding: 10px;
-	width: 380px;
+	text-align: center;
+	/*padding: 10px;*/
+	width: 25%;
+	min-width: 250px;
+	/*height: 20px;*/
+	padding: 20px;
+	margin: 10px 2px;
+}
+.podcast-cell audio {
+	max-width: 250px;
+}
+.podcast-purple {
+	color: var(--cream);
+}
+
+/* Ads */
+#ads-section {
+	padding: 10%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.ad-container {
+	/*min-width: 250px;*/
+	margin: 10px;
+}
+.ad {
+	width: 100%;
 }
 
 /* Footer */
