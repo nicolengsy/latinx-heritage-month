@@ -22,6 +22,10 @@
 	font-family: Kepler;
 	src: url(KeplerStd-Bold.otf);
 	font-weight: bold;
+}@font-face {
+	font-family: Kepler;
+	src: url(KeplerStd-ExtIt.otf);
+	font-style: italic;
 }
 @font-face {
 	font-family: Gotham;
@@ -31,6 +35,11 @@
 @font-face {
 	font-family: Gotham;
 	src: url(Gotham-Bold.otf);
+}
+@font-face {
+	font-family: Gotham;
+	src: url(GothamBoldItalic.ttf);
+	font-style: italic;
 }
 
 
@@ -90,7 +99,7 @@ h1 {
 	left: 0;
 	line-height: 3em;
 	z-index: 10001;
-	background-color: var(--blue);
+	background-color: var(--yellow);
 }
 #header .logo {
 	color: var(--cream);
@@ -114,19 +123,61 @@ h1 {
 /* Cover */
 #cover {
 	display: flex;
-	margin-top: 3em;
+	justify-content: center;
+	/*margin-top: 3em;*/
+	margin: 3em 20px;
+	flex-wrap: wrap;
 
 }
-#cover-art {
-	background-color: grey;
+#cover-art-container {
+/*	background-color: grey;
 	width: 600px;
 	height: 900px;
+*/	
+	/*height: 800px;*/
+	width: 50%;
+	min-width: 280px;
+}
+#cover-art {
+	width: 100%;
+	max-width: 560px;
 }
 #cover-description {
 	flex-grow: 1;
+	/*padding: 50px;*/
+	padding-left: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+#cover-description p {
+	font-style: italic;
+	font-size: 2vw;
+	color: var(--yellow);
+}
+#cover-description a {
+	text-decoration-color: var(--purple);
+	text-align: left;
+	display: inline-block;
+	margin: 0 auto;
 }
 #cover-text {
-	margin: 50px;
+	font-size: 3vw;
+	text-align: left;
+	display: inline-block;
+	margin: 0 auto;
+}
+@media only screen and (max-width: 375px) {
+	#cover-art-container {
+		margin-top: 50px;
+	}
+	#cover-text {
+		font-size: 20px;
+		text-align: center;
+	}
+   #cover-description p {
+   		font-size: 16px;
+   }
 }
 
 /* Editor Letter */
@@ -297,6 +348,9 @@ h1 {
 .video-title {
 	text-align: center;
 }
+.video-dek {
+	padding: 5px 10%;
+}
 .video-cell {
 	width: 40%;
 	margin: 10px;
@@ -313,6 +367,7 @@ h1 {
 	font-family: Kepler;
 	text-decoration: none;
 	color: var(--orange);
+	font-size: .9em;
 }
 .artist-ig:hover {
 	text-decoration: underline;
