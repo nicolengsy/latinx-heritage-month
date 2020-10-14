@@ -288,13 +288,16 @@ h1 {
 
 /* Videos */
 #video-section {
-	padding: 10%;
+	padding: 7%;
 }
 .videos {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	margin-top: 50px;
+}
+.video-title {
+	text-align: center;
 }
 .video-cell {
 	width: 40%;
@@ -317,28 +320,36 @@ h1 {
 	text-decoration: underline;
 }
 
-
 /* Podcasts */
 #podcast-section {
+	padding: 5% 10%;
+	text-align: center;
+}
+.podcasts-container {
 	display: flex;
 	justify-content: center;
-	padding: 10%;
 	flex-wrap: wrap;
+	margin-top: 20px;
 }
 .podcast-cell {
-	text-align: center;
-	/*padding: 10px;*/
-	max-width: 30%;
+	max-width: 35%;
 	min-width: 250px;
-	/*height: 20px;*/
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	margin: 15px;
+
+}
+.podcast-body {
 	padding: 20px;
-	margin: 10px 7px;
 }
-.podcast-cell audio {
-	max-width: 250px;
+.podcast-iframe {
+	width: 100%;
 }
-.podcast-purple {
-	color: var(--cream);
+.podcast-link {
+	text-decoration: none;
+	color: black;
+}
+.podcast-link:hover {
+	color: var(--orange);
 }
 
 /* Ads */
@@ -359,6 +370,15 @@ h1 {
 	width: 100%;
 }
 
+/* Print */
+#print-section {
+	text-align: center;
+	padding: 50px 0px 40px 0px;
+}
+.print-iframe {
+	margin-top: 40px;
+}
+
 /* Footer */
 footer {
 	background-color: var(--blue);
@@ -368,7 +388,4 @@ footer {
 	/*width: 70%;*/
 	text-align: center;
 	margin: auto;
-}
-.yellow-name {
-	/*color: var(--yellow);*/
 }
