@@ -170,6 +170,12 @@ h1 {
 	display: inline-block;
 	margin: 0 auto;
 }
+.read-story {
+	margin-bottom: 0px;
+}
+.read-print {
+	margin-top: 2px;
+}
 @media only screen and (max-width: 375px) {
 	#cover-art-container {
 		margin-top: 50px;
