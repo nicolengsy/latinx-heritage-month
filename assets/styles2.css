@@ -57,18 +57,8 @@ h1 {
 	margin: 1px;
 }
 .yellowlight {
-	/*background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #f9c74f 65%);*/
+	background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #f9c74f 65%);
 	display: inline-block;
-	line-height: 0em;
-	padding-bottom: 0.5em;
-	background-color: var(--yellow);
-}
-.line {
-	border-color: 1px solid gray;
-	width: 100%;
-}
-.align-right {
-	text-align: right;
 }
 /* Header */
 #header {
@@ -114,7 +104,7 @@ h1 {
 
 /* Editor Letter */
 #editor-section {
-	padding: 50px 10% 50px 10%;
+	padding: 10%;
 	margin: auto;
 	width: 60%;
 }
@@ -157,49 +147,7 @@ h1 {
 }
 
 
-/* Stories 1 */
-#story-section-1 {
-	padding: 5%;
-}
-.blob {
-	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
-}
-.blob-2 {
-	flex-wrap: wrap-reverse;
-}
-.side-graphic {
-	width: 40%;
-	min-width: 300px;
-}
-.side-graphic img {
-	width: 100%;
-}
-.story-stack {
-	width: 40%;
-	margin-top: 40px;
-}
-.story-stack a {
-	color: black;
-	text-decoration: none;
-}
-.story-stack a:hover {
-	color: var(--tangerine);
-}
-.stacked-story {
-	margin: 25px 0px;
-	min-width: 300px;
-	width: 100%;
-}
-.stacked-story:hover {
-	position: relative;
-	top: -5px;
-}
-/* Stories 2 */
-#story-section-2 {
-	padding: 5%;
-}
+/* Stories */
 .row {
  display: flex;
  justify-content: space-around;
@@ -211,6 +159,7 @@ h1 {
 }
 .cell {
 	width: 400px;
+	height: 400px;
 	/*width: 30vw;*/
 	/*height: 28vw;*/
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -226,42 +175,10 @@ h1 {
 .story-title {
 	font-size: 1.5em;
 }
-.graphic-container {
-	text-align: right;
-}
-.graphic {
-	width: 50%;
-}
 
 /* Videos */
 #video-section {
 	padding: 10%;
-}
-.videos {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	margin-top: 50px;
-}
-.video-cell {
-	width: 40%;
-	margin: 10px;
-	margin-bottom: 30px;
-}
-.video-gifs {
-	width: 100%;
-}
-.video-gifs:hover {
-	box-sizing: border-box;
-	border: var(--orange) 5px solid;
-}
-.artist-ig {
-	font-family: Kepler;
-	text-decoration: none;
-	color: var(--orange);
-}
-.artist-ig:hover {
-	text-decoration: underline;
 }
 
 
@@ -270,20 +187,6 @@ h1 {
 	display: flex;
 	justify-content: center;
 }
-.podcast-cell {
+#podcast-cell {
 	padding: 10px;
-	width: 380px;
-}
-
-/* Footer */
-footer {
-	background-color: var(--blue);
-	color: var(--cream);
-	padding: 20px;
-	font-family: Gotham;
-}
-footer p {
-	width: 70%;
-	text-align: center;
-	margin: auto;
 }
