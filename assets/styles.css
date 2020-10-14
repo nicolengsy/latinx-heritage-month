@@ -147,11 +147,12 @@ h1 {
 }
 #cover-description {
 	flex-grow: 1;
-	/*padding: 50px;*/
-	padding-left: 10px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	margin: 0 auto;
+	padding: 10px;
+	padding-left: 5%;
 }
 #cover-description p {
 	font-style: italic;
@@ -160,15 +161,11 @@ h1 {
 }
 #cover-description a {
 	text-decoration-color: var(--purple);
-	text-align: left;
-	display: inline-block;
-	margin: 0 auto;
 }
 #cover-text {
 	font-size: 3vw;
 	text-align: left;
 	display: inline-block;
-	margin: 0 auto;
 }
 .read-story {
 	margin-bottom: 0px;
@@ -176,9 +173,12 @@ h1 {
 .read-print {
 	margin-top: 2px;
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 570px) {
 	#cover-art-container {
 		margin-top: 50px;
+	}
+	#cover-description {
+		margin: auto;
 	}
 	#cover-text {
 		font-size: 20px;
@@ -186,6 +186,7 @@ h1 {
 	}
    #cover-description p {
    		font-size: 16px;
+   		text-align: center;
    }
 }
 
@@ -359,6 +360,7 @@ h1 {
 }
 .video-dek {
 	padding: 5px 10%;
+	text-align: center;
 }
 .video-cell {
 	width: 40%;
@@ -443,8 +445,8 @@ h1 {
 
 /* Footer */
 footer {
-	background-color: var(--blue);
-	color: var(--cream);
+	background-color: var(--yellow);
+	color: var(--black);
 	padding: 50px 20px;
 	text-align: center;
 	margin: auto;
