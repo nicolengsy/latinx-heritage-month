@@ -44,6 +44,9 @@
 
 
 /* General */
+html {
+	scroll-behavior: smooth;
+}
 body {
 	background-color: var(--cream);
 	font-family: Kepler, Georgia, serif;
