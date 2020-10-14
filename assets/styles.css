@@ -127,19 +127,14 @@ h1 {
 #cover {
 	display: flex;
 	justify-content: center;
-	/*margin-top: 3em;*/
 	margin: 3em 20px;
 	flex-wrap: wrap;
 
 }
 #cover-art-container {
-/*	background-color: grey;
-	width: 600px;
-	height: 900px;
-*/	
-	/*height: 800px;*/
 	width: 50%;
 	min-width: 280px;
+	text-align: center;
 }
 #cover-art {
 	width: 100%;
